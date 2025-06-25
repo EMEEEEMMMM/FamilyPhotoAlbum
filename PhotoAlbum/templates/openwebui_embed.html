@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    #openwebui-frame {
+        width: 100%;
+        height: 100vh;
+        border: none;
+    }
+</style>
+
+<iframe id="openwebui-frame"
+        src="http://YOUROPENWEBUI:8080"
+        allow="clipboard-write; microphone">
+
+</iframe>
+
+{% endblock content %}

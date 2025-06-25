@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>添加媒体库路径</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="path" placeholder="媒体库路径">
+        <input type="submit" value="添加">
+    </form>
+    <h1>已加载图片列表</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>img_path</th>
+                <th>pic_time</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for img in img_list %}
+            <tr>
+                <td>{{ img.id }}</td>
+                <td>{{ img.img_path }}</td>
+                <td>{{ img.pic_time }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

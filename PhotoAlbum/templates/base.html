@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/remixicon.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy">
+    <title>家庭相册</title>
+</head>
+<body>
+<header class="header" id="header" style="background-color: transparent">
+    <nav class="nav container">
+        <a href="#" class="nav__logo" style="color: black;font-size: 25px">FamilyAlbum</a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="/home/" class="nav__link" style="color: black;font-size: 25px">主页</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="/ai-chat/" class="nav__link" style="color: black;font-size: 25px">AI助手</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="/album2017/" class="nav__link" style="color: black;font-size: 25px">2017前</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link" style="color: black;font-size: 25px">2017后</a>
+                </li>
+
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+        </div>
+    </nav>
+</header>
+<script src="/static/js/main.js"></script>
+{% block content %}
+{% endblock content %}
+</body>
+</html>
