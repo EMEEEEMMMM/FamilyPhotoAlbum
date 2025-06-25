@@ -8,11 +8,14 @@ You will notice that there is a lot of things which are related to the word 'alb
 ---
 ## Installation
 There is no specific version of python, I used python 3.11.9. Of course, you can also create a virtual environment.
-`git clone https://github.com/EMEMEMEMEMEMEMEMEMEM/FamilyPhotoAlbum.git`
-`pip install django`
-`pip install mysqlclient`
+```
+git clone https://github.com/EMEMEMEMEMEMEMEMEMEM/FamilyPhotoAlbum.git
+pip install django
+pip install mysqlclient
+```
 
 Makesure that your server has mysql on it
+
 ```
 sudo apt update
 sudo apt install mysql-server
@@ -41,11 +44,16 @@ DATABASES = {
 ```
 
 The last thing before booting up the server
-`python manage.py migrate`
-`python manage.py makemigrations`
+```
+python manage.py migrate
+python manage.py makemigrations
+```
 
 After a lot of configuration, boot up the server
-`python manage.py runserver 0.0.0.0:8000`
+```
+python manage.py runserver 0.0.0.0:8000
+```
+
 Store your photos in */PhotoAlbum/static/media/XXXX/YYYY-MM-DD*
 (I had written a python script which can sort photos into folders by the order of time,but I can't find it anywhere in my laptop, just use any AI to help you save some time.)
 
